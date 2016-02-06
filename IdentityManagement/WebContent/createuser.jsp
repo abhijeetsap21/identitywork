@@ -6,49 +6,51 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Create a User</title>
 </head>
-<body>
+<body style="background-color: #668cff">
 
-<form method="post" action="create.jsp">
+<form method="post" action="create.jsp"> <!--method to invoke create.jsp-->
             <center>
-            <table border="0" width="30%" cellpadding="3" style="background-color:#0000FF">
+            <!--Table for handling user information-->
+            <table border="0" width="30%" cellpadding="3" >
                 <thead>
                     <tr>
-                        <th colspan="4">Enter Details</th>
+                        <th colspan="4"style="font-size:300%">Enter Details</th>
                     </tr>
                 </thead>
+                
                 <tbody>
                     <tr>
-                        <td>Name</td>
+                    	<td style="font-size:150%">Name</td>
+                        <td style="font-size:150%" ><input type="text" name="uname" value="" /></td>
+                        </tr>
                         
-                        <td ><input type="text" name="uname" value="" /></td>
-                    </tr>
                     <tr>
-                        <td>Password</td>
-                        <td><input type="password" name="pass" value="" /></td>
+                        <td style="font-size:150%">Password</td>
+                        <td style="font-size:150%"><input type="password" name="pass" value="" /></td>
                     </tr>
                     
-                   <tr>
-                        <td>Age</td>
+                    <tr>
+                        <td style="font-size:150%">Age</td>
+                        <td style="font-size:150%" ><input type="text" name="uage" value="" /></td>
+                        </tr>
+                    <tr>
+                        <td style="font-size:150%">Telephone Number</td>
+                        <td style="font-size:150%" ><input type="text" name="utel" value="" /></td>
+                    </tr>
                         
-                        <td ><input type="text" name="uage" value="" /></td>
+                    <tr>
+                        <td style="font-size:150%">Email</td>
+                        <td style="font-size:150%" ><input type="text" name="uemail" value="" /></td>
+                        
+                    <tr>
+                        <td style="font-size:150%">ISADMIN?</td>
+                        <td style="font-size:150%"><input type="checkbox" name="isadmin" value="1"></td>
+                    
                     </tr>
                     <tr>
-                        <td>Telephone Number</td>
-                        
-                        <td ><input type="text" name="utel" value="" /></td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        
-                        <td ><input type="text" name="uemail" value="" /></td>
-                        <tr>
-                        	<td>ISADMIN?</td>
-                        	<td><input type="checkbox" name="isadmin" value="1"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="submit" value="Submit" /></td>
-                        <td><input type="button" onclick="location.href = 'menu.html' "; value="Cancel"></td>
-                        <td><input type="reset" value="Reset" /></td>
+                        <td style="font-size:150%"><input type="submit" value="Submit" /></td>
+                        <td style="font-size:150%"><input type="button" onclick="location.href = 'menu.html' "; value="Cancel"></td>
+                        <td style="font-size:150%"><input type="reset" value="Reset" /></td>
                         
                     </tr>
                     <tr >

@@ -1,19 +1,19 @@
-<%@ page import ="java.sql.*" %>
+<%@ page import ="java.sql.*" %>			<!-- importing sql libraries  -->
 <%@ page import ="javax.sql.*" %>
 <%
     
-String id2=request.getParameter("id");
-//out.println(value);
+String id2=request.getParameter("id");     			// getting session variable
 
 
-    Class.forName("com.mysql.jdbc.Driver");
-    Connection con = DriverManager.getConnection("jdbc:mysql://localhost/identitydb","root","");
+
+    Class.forName("com.mysql.jdbc.Driver"); 		//initializing database driver
+    Connection con = DriverManager.getConnection("jdbc:mysql://localhost/identitydb","root","");       //initiate database connection
     Statement st = con.createStatement();
     ResultSet rs;
-    String cmd = "select * from users where `id`='" + id2 + "'"; 
+    String cmd = "select * from users where `id`='" + id2 + "'";    //editing user as per the session variable
     rs = st.executeQuery(cmd);
     
-    out.println("<center><h3>Edit Users</h3><form method=\"post\" action=\"modify.jsp\"><table border=1>");
+    out.println("<center><h3>Edit Users</h3><form method=\"post\" action=\"modify.jsp\"><table border=1>");  //initializing table
     
     while (rs.next()) {
     	int isadmin = rs.getInt("isadmin");
