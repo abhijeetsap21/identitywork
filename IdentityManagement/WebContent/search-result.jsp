@@ -9,7 +9,7 @@
     ResultSet rs;
     rs = st.executeQuery("select * from users where `name` LIKE '%" + kwd + "%'");
     
-    out.println("<center><h3>Registered Users</h3><table border=1><tr><th>UserID</th><th>Name</th><th>Age</th><th>Telephone</th><th>Email</th><th>IsAdmin</th><th>Edit</th><th>Delete</th>");
+    out.println("<center><body bgcolor=#668cff><h3>Registered Users</h3><table border=1><tr><th>UserID</th><th>Name</th><th>Age</th><th>Telephone</th><th>Email</th><th>IsAdmin</th><th>Edit</th><th>Delete</th>");
     out.println("<p><a href='menu.html'>CANCEL</a></p>");
     
     while (rs.next()) {

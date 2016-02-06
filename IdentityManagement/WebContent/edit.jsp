@@ -13,8 +13,8 @@ String id2=request.getParameter("id");     			// getting session variable
     String cmd = "select * from users where `id`='" + id2 + "'";    //editing user as per the session variable
     rs = st.executeQuery(cmd);
     
-    out.println("<center><h3>Edit Users</h3><form method=\"post\" action=\"modify.jsp\"><table border=1>");  //initializing table
-    
+    out.println("<center><body bgcolor=#668cff><h3>Edit Users</h3><form method=\"post\" action=\"modify.jsp\"><table border=1>");  //initializing table
+    out.println("<p><a href='menu.html'>CANCEL</a></p>");
     while (rs.next()) {
     	int isadmin = rs.getInt("isadmin");
     	int id1 = rs.getInt("id");

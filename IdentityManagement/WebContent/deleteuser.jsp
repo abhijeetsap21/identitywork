@@ -1,15 +1,15 @@
-<%@ page import ="java.sql.*" %>
+<%@ page import ="java.sql.*" %>      <!--Importing SQL libraries-->
 <%@ page import ="javax.sql.*" %>
 <%
     
     
-    Class.forName("com.mysql.jdbc.Driver");
-    Connection con = DriverManager.getConnection("jdbc:mysql://localhost/identitydb","root","");
+    Class.forName("com.mysql.jdbc.Driver");				//initialize mysql driver
+    Connection con = DriverManager.getConnection("jdbc:mysql://localhost/identitydb","root","");		//initiating connection
     Statement st = con.createStatement();
     ResultSet rs;
     rs = st.executeQuery("select * from users");
     
-    out.println("<center><h3>Registered Users</h3><table border=1><tr><th>UserID</th><th>Name</th><th>Age</th><th>Telephone</th><th>Email</th><th>IsAdmin</th><th>Edit</th>");
+    out.println("<center><body bgcolor=#668cff><h3>Registered Users</h3><table border=1><tr><th>UserID</th><th>Name</th><th>Age</th><th>Telephone</th><th>Email</th><th>IsAdmin</th><th>Edit</th>");    //display table
     out.println("<p><a href='menu.html'>CANCEL</a></p>");
     
     while (rs.next()) {

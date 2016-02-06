@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Search Users</title>
 </head>
-<body>
+<body style="background-color: #668cff">
 <p><a href='menu.html'>CANCEL</a></p>
 <form method="POST" action="search-result.jsp">
 Enter keyword: <input type="text" name="kwd" >
