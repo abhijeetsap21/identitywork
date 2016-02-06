@@ -1,5 +1,5 @@
 <!--This file  is responsible for displaying the 
-details of not admin user
+details of not Admin user
 
 @author ABVA
 

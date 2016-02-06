@@ -16,7 +16,7 @@ displaying number of users that can be edited
     ResultSet rs;
     rs = st.executeQuery("select * from users");        //initialting query
     
-    out.println("<center><body bgcolor=#668cff><h3>Registered Users</h3><table border=0 ><tr><th>UserID</th><th>Name</th><th>Age</th><th>Telephone</th><th>Email</th><th>IsAdmin</th><th>Edit</th></body");
+    out.println("<center><body bgcolor=#668cff><h3>Registered Users</h3><table border=1 ><tr><th>UserID</th><th>Name</th><th>Age</th><th>Telephone</th><th>Email</th><th>IsAdmin</th><th>Edit</th></body");
     out.println("<p><a href='menu.html'>CANCEL</a></p>");
     
     while (rs.next()) {

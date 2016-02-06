@@ -18,6 +18,8 @@ setting variables and calling the query for user deletion
     
     out.println("<center><body bgcolor=#668cff><h3>Registered Users</h3><table border=1><tr><th>UserID</th><th>Name</th><th>Age</th><th>Telephone</th><th>Email</th><th>IsAdmin</th><th>Edit</th>");    //display table
     out.println("<p><a href='menu.html'>CANCEL</a></p>");
+            
+        
     
     while (rs.next()) {
     	int isadmin = rs.getInt("isadmin");

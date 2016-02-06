@@ -5,7 +5,7 @@ authenticating user inputs to verify if admin or user or a wrong user
 
 -->
 
-<%@ page import ="java.sql.*" %> 					//importing sql libraries 
+<%@ page import ="java.sql.*" %> 					 
 <%@ page import ="javax.sql.*" %>
 <%
     String userid = request.getParameter("uname");  //userid from main.jsp  
