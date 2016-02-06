@@ -8,18 +8,18 @@ editing user entries
 <%@ page import ="javax.sql.*" %>
 <%
     String userid = request.getParameter("uname");
-String id1 = request.getParameter("usid");
+String id1 = request.getParameter("usid");					//Session variables
     String pwd = request.getParameter("pass");
     String age = request.getParameter("uage");
     String tel = request.getParameter("utel");
     String email = request.getParameter("uemail");
     String isadmin = request.getParameter("isadmin");
     Class.forName("com.mysql.jdbc.Driver");
-    Connection con = DriverManager.getConnection("jdbc:mysql://localhost/identitydb","root","");
+    Connection con = DriverManager.getConnection("jdbc:mysql://localhost/identitydb","root",""); 			//Connection String
     Statement st = con.createStatement();
     ResultSet rs;
     String cmd = "update users set `name` = '" + userid + "', `age` = '" + age + "', `email` = '" + email + "', `tele` = '" + tel + "', `isadmin`= '" + isadmin + "' where `id`='" + id1 + "'";
-    st.executeUpdate(cmd);
+    st.executeUpdate(cmd);			//query execution
     
     out.println("Successfull!!!!<a href='update.jsp'>BACK</a>");
     con.close();
