@@ -7,6 +7,7 @@
 <title>Search Users</title>
 </head>
 <body>
+<p><a href='menu.html'>CANCEL</a></p>
 <form method="POST" action="search-result.jsp">
 Enter keyword: <input type="text" name="kwd" >
 <input type="submit" value="Search">
