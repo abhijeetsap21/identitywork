@@ -47,7 +47,7 @@
                     </tr>
                     <tr>
                         <td><input type="submit" value="Submit" /></td>
-                        <td></td>
+                        <td><input type="button" onclick="location.href = 'menu.html' "; value="Cancel"></td>
                         <td><input type="reset" value="Reset" /></td>
                         
                     </tr>
