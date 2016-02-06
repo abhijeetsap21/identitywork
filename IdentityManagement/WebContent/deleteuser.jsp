@@ -14,7 +14,7 @@
     
     while (rs.next()) {
     	int isadmin = rs.getInt("isadmin");
-    	int id1 = rs.getInt("id");
+    	int id1 = rs.getInt("id");				//getting sessions
     	String age = rs.getString("age");
     	String email = rs.getString("email");
     	String name = rs.getString("name");
@@ -22,15 +22,16 @@
     	//String tel = rs.getString("tele");
         out.println("<tr>");
         out.println("<td> " + id1 + "</td>");
-        out.println("<td> " + name + "</td>");
+        out.println("<td> " + name + "</td>");		//setting sessions to values in form
         out.println("<td> " + age + "</td>");
         out.println("<td> " + tel + "</td>");
         out.println("<td> " + email + "</td>");
-        out.println("<td> " + isadmin + "</td><td><a href='delete.jsp?id=" + id1 + "'>Delete</a></td>");
+        out.println("<td> " + isadmin + "</td><td><a href='delete.jsp?id=" + id1 + "'>Delete</a></td>"); // calling the delete query
         out.println("</tr>");
         //out.println("<a href='logout.jsp'>Log out</a>");
     } 
     out.println("</table>");
+    con.close();
 %>
 
 

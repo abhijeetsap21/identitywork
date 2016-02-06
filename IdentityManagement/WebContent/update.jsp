@@ -32,6 +32,7 @@
         
     } 
     out.println("</table>");
+    con.close();
 %>
 
 

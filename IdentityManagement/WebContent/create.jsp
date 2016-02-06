@@ -23,5 +23,6 @@
     	}
     
     		out.println("Successfull!!!!<a href='menu.html'>BACK</a>");
+    con.close();
     
 %>

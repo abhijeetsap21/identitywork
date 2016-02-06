@@ -34,6 +34,7 @@ String id2=request.getParameter("id");     			// getting session variable
         //out.println("<a href='logout.jsp'>Log out</a>");
     } 
     out.println("</table> <input type=\"submit\" value=\"Submit\" ></form>");
+    con.close();
 %>
 
 

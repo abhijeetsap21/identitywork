@@ -31,6 +31,7 @@
         //out.println("<a href='logout.jsp'>Log out</a>");
     } 
     out.println("</table>");
+    con.close();
 %>
 
     

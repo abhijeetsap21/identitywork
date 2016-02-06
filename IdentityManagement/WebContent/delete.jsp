@@ -12,5 +12,6 @@ String id2=request.getParameter("id");  			//importing sessions
     st.executeUpdate(cmd);
     
     out.println("Successfull!!!!<a href='update.jsp'>BACK</a>");
+    con.close();
     
 %>

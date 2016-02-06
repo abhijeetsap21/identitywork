@@ -16,5 +16,6 @@ String id1 = request.getParameter("usid");
     st.executeUpdate(cmd);
     
     out.println("Successfull!!!!<a href='update.jsp'>BACK</a>");
+    con.close();
     
 %>
