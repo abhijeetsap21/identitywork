@@ -1,3 +1,10 @@
+<!--This file  is responsible for
+setting variables and calling the query for user deletion 
+
+@author ABVA
+
+-->
+
 <%@ page import ="java.sql.*" %>      <!--Importing SQL libraries-->
 <%@ page import ="javax.sql.*" %>
 <%

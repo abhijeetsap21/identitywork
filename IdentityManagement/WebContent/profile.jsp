@@ -1,3 +1,10 @@
+<!--This file  is responsible for displaying the 
+details of not admin user
+
+@author ABVA
+
+-->
+
 <%@ page language="java" import="java.util.*" %>
 <%
 

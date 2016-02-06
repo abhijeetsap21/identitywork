@@ -1,3 +1,10 @@
+<!--This file  is responsible for 
+displaying number of users that can be edited 
+
+@author ABVA
+
+-->
+
 <%@ page import ="java.sql.*" %>			<!--Importing SQL libraries-->
 <%@ page import ="javax.sql.*" %>
 <%

@@ -1,3 +1,10 @@
+<!--This file  is responsible for
+authenticating user inputs to verify if admin or user or a wrong user
+
+@author ABVA
+
+-->
+
 <%@ page import ="java.sql.*" %> 					//importing sql libraries 
 <%@ page import ="javax.sql.*" %>
 <%

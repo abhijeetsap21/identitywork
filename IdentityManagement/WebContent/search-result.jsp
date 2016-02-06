@@ -1,3 +1,9 @@
+<!--This file  is responsible for
+displaying the results based on user search
+
+@author ABVA
+
+-->
 <%@ page import ="java.sql.*" %>
 <%@ page import ="javax.sql.*" %>
 <%

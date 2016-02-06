@@ -1,3 +1,9 @@
+<!--This file  is responsible for
+deleting  a user entry
+
+@author ABVA
+
+-->
 <%@ page import ="java.sql.*" %>			<!--Importing SQL libraries-->
 <%@ page import ="javax.sql.*" %>
 <%

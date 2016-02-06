@@ -1,3 +1,9 @@
+<!--This file  is responsible for
+editing user entries
+
+@author ABVA
+
+-->
 <%@ page import ="java.sql.*" %>
 <%@ page import ="javax.sql.*" %>
 <%
